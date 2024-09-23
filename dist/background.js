@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener(((e,n,o)=>{console.log("Received data from content script:",e),o({status:"Data received"})})),chrome.runtime.onInstalled.addListener((()=>{console.log("Background script running")}));

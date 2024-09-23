@@ -1,0 +1,27 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "Canteen Meal Random Picker",
+    "description": "This is a Chrome extension built with React and TypeScript",
+    "action": {
+      "default_popup": "js/index.html",
+      "default_title": "React Chrome Extension"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ]
+  }
+  

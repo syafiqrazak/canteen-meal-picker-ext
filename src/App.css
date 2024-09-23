@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  color: black;
+  text-align: center;
+}
+
+.container {
+  width: 15rem;
+  /* height: 15rem; */
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-in-active {
+  opacity: 1;
+}
+
+.scale-up {
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-up-active {
+  transform: scale(1);
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-in-active {
+  transform: translateX(0);
+}
+
+.bounce-in {
+  animation: bounce 0.5s forwards;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.answer-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.jackpot {
+  font-size: 2em;
+  color: #ff5722; /* Bright color for visibility */
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.jackpot-animation {
+  animation: bounce 0.5s infinite;
+}
+
+.answer {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

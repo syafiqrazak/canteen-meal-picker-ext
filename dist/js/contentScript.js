@@ -1,0 +1,1 @@
+(()=>{const e=document.title,r=Array.from(document.querySelectorAll("p")).map((e=>e.innerText));console.log(e),chrome.runtime.sendMessage({title:e,paragraphs:r})})();
